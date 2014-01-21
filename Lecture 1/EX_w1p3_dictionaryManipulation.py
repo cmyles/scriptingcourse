@@ -54,4 +54,4 @@ else:
 
 if dict1.has_key('a'):
 	print "I luv " + dict1["a"] + "burgers."
-	
+

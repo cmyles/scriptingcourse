@@ -76,5 +76,5 @@ def concatWithCheeze(str1="Chilli", str2="doodles"):
 output = concatWithCheeze()
 print output
 
-output = concatWithCheeze(str2="chips")
+output = concatWithCheeze(str2="chicken")
 print output

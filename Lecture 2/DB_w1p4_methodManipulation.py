@@ -12,11 +12,11 @@ __version__=  '1.0'
 
 
 #1. Calling a method
-shoutOut("Bernie!")
-
 def shoutOut (str1):
 	print "Yo! " + str1
-	
+
+shoutOut("Bernie!")
+
 
 #2. Dealing with bad input (2 errors here)
 def shoutOut(str1="Bernie"):
@@ -25,13 +25,15 @@ def shoutOut(str1="Bernie"):
 	except:
 		print "Exceptional Yo! " + str(str1)
 
-shoutOut(42)
+shoutOut(6)
 
 #3. Input / Output
 def shoutOut(str1="Bernie"):
 	try: 
 		tempVar = str(str1)
+		return tempVar
 	except: 
-		return 
+		return
 		
-print "You shall not pass, " + shoutOut("Dawg")
+print "You shall not pass, " + str(shoutOut("Dawg"))
+print "You shall not pass, %s" % shoutOut("Dawg")
